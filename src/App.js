@@ -1,11 +1,27 @@
 import './App.css';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
+import Evento from './components/Evento';
+import Form from './components/Form';
+//import SayMyName from './components/SayMyName';
+// import Pessoa from './components/Pessoa';
+//import Frase from './components/Frase';
+//import List from './components/List';
+
+
 
 function App() {
-  const nome = 'Maria'
   return (
     <div className="App">
+      <h1>Testando Evento</h1>
+      <Evento numero="1"/>
+      <Evento numero="2" />
+      <Form />
+
+
+    {/* 
+    const nome = 'Maria'
+    <h1>Testando CSS</h1>
+      <Frase />
+      <Frase />
       <SayMyName nome="Wendell" />
       <SayMyName nome="Juliany" />
       <SayMyName nome="João" />
@@ -15,6 +31,9 @@ function App() {
         idade="28" 
         profissao="programador" 
         foto="https://via.placeholder.com/150" />
+
+        <List />
+    */}
     </div>
   );
 }
