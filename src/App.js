@@ -1,7 +1,7 @@
 import './App.css';
-import {useState} from 'react'
-import SeuNome from './components/SeuNome'
-import Saudacao from './components/Saudacao';
+//import {useState} from 'react'
+//import SeuNome from './components/SeuNome'
+//import Saudacao from './components/Saudacao';
 //import OutraLista from './components/OutraLista';
 //import Condicional from './components/Condicional';
 //import Evento from './components/Evento';
@@ -12,22 +12,20 @@ import Saudacao from './components/Saudacao';
 //import List from './components/List';
 
 function App() {
-  const [nome, setNome] = useState()
+  
 
   return (
-    <div className="App">
-      <div>
-        <h1>State Lift</h1>
-        <SeuNome setNome={setNome} />
-        <Saudacao nome={nome} />
-        
-      </div>
-
+      
+    
 
 
 
     {/* 
-    
+    <div>
+    const [nome, setNome] = useState()
+        <h1>State Lift</h1>
+        <SeuNome setNome={setNome} />
+        <Saudacao nome={nome} />
       <OutraLista itens={meusItens} />
       <OutraLista itens={[]} />
     <Condicional />
@@ -46,10 +44,8 @@ function App() {
         idade="28" 
         profissao="programador" 
         foto="https://via.placeholder.com/150" />
-
         <List />
     */}
-    </div>
   );
 }
 
