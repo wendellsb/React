@@ -1,6 +1,7 @@
 import './App.css';
-import Evento from './components/Evento';
-import Form from './components/Form';
+import Condicional from './components/Condicional';
+//import Evento from './components/Evento';
+//import Form from './components/Form';
 //import SayMyName from './components/SayMyName';
 // import Pessoa from './components/Pessoa';
 //import Frase from './components/Frase';
@@ -11,14 +12,15 @@ import Form from './components/Form';
 function App() {
   return (
     <div className="App">
-      <h1>Testando Evento</h1>
-      <Evento numero="1"/>
-      <Form />
+      <h1>Renderização Condicional</h1>
+      <Condicional />
 
 
     {/* 
     const nome = 'Maria'
     <h1>Testando CSS</h1>
+    <Evento numero="1"/>
+      <Form />
       <Frase />
       <Frase />
       <SayMyName nome="Wendell" />
