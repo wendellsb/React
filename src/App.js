@@ -1,5 +1,9 @@
 import './App.css';
-import Condicional from './components/Condicional';
+import {useState} from 'react'
+import SeuNome from './components/SeuNome'
+import Saudacao from './components/Saudacao';
+//import OutraLista from './components/OutraLista';
+//import Condicional from './components/Condicional';
 //import Evento from './components/Evento';
 //import Form from './components/Form';
 //import SayMyName from './components/SayMyName';
@@ -7,16 +11,26 @@ import Condicional from './components/Condicional';
 //import Frase from './components/Frase';
 //import List from './components/List';
 
-
-
 function App() {
+  const [nome, setNome] = useState()
+
   return (
     <div className="App">
-      <h1>Renderização Condicional</h1>
-      <Condicional />
+      <div>
+        <h1>State Lift</h1>
+        <SeuNome setNome={setNome} />
+        <Saudacao nome={nome} />
+        
+      </div>
+
+
 
 
     {/* 
+    
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
+    <Condicional />
     const nome = 'Maria'
     <h1>Testando CSS</h1>
     <Evento numero="1"/>
