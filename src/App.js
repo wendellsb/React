@@ -1,52 +1,29 @@
-import './App.css';
-//import {useState} from 'react'
-//import SeuNome from './components/SeuNome'
-//import Saudacao from './components/Saudacao';
-//import OutraLista from './components/OutraLista';
-//import Condicional from './components/Condicional';
-//import Evento from './components/Evento';
-//import Form from './components/Form';
-//import SayMyName from './components/SayMyName';
-// import Pessoa from './components/Pessoa';
-//import Frase from './components/Frase';
-//import List from './components/List';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Footer from './components/layout/Footer';
+import NavBar from './components/layout/NavBar';
+import Contato from './pages/Contato';
+import Empresa from './pages/Empresa';
+import Home from './pages/Home';
+
 
 function App() {
-  
 
   return (
-      
+    <Router>
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/empresa" element={<Empresa />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
+
+      <Footer />
+    </Router>
     
-
-
-
-    {/* 
-    <div>
-    const [nome, setNome] = useState()
-        <h1>State Lift</h1>
-        <SeuNome setNome={setNome} />
-        <Saudacao nome={nome} />
-      <OutraLista itens={meusItens} />
-      <OutraLista itens={[]} />
-    <Condicional />
-    const nome = 'Maria'
-    <h1>Testando CSS</h1>
-    <Evento numero="1"/>
-      <Form />
-      <Frase />
-      <Frase />
-      <SayMyName nome="Wendell" />
-      <SayMyName nome="Juliany" />
-      <SayMyName nome="João" />
-      <SayMyName nome={nome} />
-      <Pessoa 
-        nome="Rodrigo" 
-        idade="28" 
-        profissao="programador" 
-        foto="https://via.placeholder.com/150" />
-        <List />
-    */}
-  );
+  
+  )
+  // npm install react-router-dom
 }
 
 export default App;
